@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.meappunto.fragments.PublicarNecesidadFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bannerId"
+            android:isScrollContainer="false"
+            android:layout_marginBottom="50dp"
+            android:layout_above="@+id/btnRegistrarAprendiz">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/linearId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/logo_camu"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/colorFondo1"
+                        android:layout_marginRight="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Constructora CAMÚ"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorTitulo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cra. 16 No 23-23"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Armenia Quindío"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="www.constructoracamu.com"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/etiNecesito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Yo Necesito"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorTitulo"/>
+
+                <EditText
+                    style="@style/camposDeTexto"
+                    android:hint="Nombre"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:imeOptions="actionDone"/>
+
+                <EditText
+                    style="@style/camposDeTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Para nuevo proyecto de vivienda, se requiere propuesta gráfica de logotipo, señalética y tabla de colores. Detalles adicionales, solcitar al correo proyectos@constructoracamu.com"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionDone"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    <Button
+        style="@style/botones"
+        android:text="Registro de Aprendiz"
+        android:id="@+id/button" />
+
+
+</RelativeLayout>

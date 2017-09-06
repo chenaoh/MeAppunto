@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items_centro">
+        <item>Centro de Formación</item>
+        <item>Centro Comercio y Turismo</item>
+        <item>Centro Agroindustrial</item>
+        <item>Centro de la Construcción</item>
+        <item>Centro de Turismo y Gastronomía</item>
+    </string-array>
+
+    <string-array name="items_programa">
+        <item>Programa de Formación</item>
+        <item>Técnico en Operaciones Contables</item>
+        <item>Diseño para la comunicación Grafica</item>
+        <item>Analisis y Desarrollo de los Sistemas de Información</item>
+        <item>Trade Marketing</item>
+        <item>Comunicación Comercial</item>
+    </string-array>
+
+    <string-array name="items_trimestre">
+        <item>Trimestre Actual</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>Etapa Productiva</item>
+    </string-array>
+
+</resources>

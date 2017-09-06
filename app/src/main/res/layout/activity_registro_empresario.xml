@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro_empresario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo2"
+    tools:context="co.quindio.sena.meappunto.actividades.RegistroEmpresarioActivity">
+
+    <RelativeLayout
+        android:id="@+id/bannerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondo1"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_me_appunto"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bannerId"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Razón Social"/>
+
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Documento"/>
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Contacto" />
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Celular"/>
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Dirección"/>
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Ciudad"
+                android:layout_marginBottom="30dp"/>
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Contraseña"  />
+
+            <EditText
+                style="@style/camposDeTexto"
+                android:hint="Repetir Contraseña"
+                android:layout_marginBottom="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        style="@style/botones"
+        android:text="Registro de Empresario" />
+
+</RelativeLayout>
